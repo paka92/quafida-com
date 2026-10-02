@@ -26,9 +26,9 @@
 <h2>Backup files</h2>
 <p>When you use "Export backup", the app writes all parchments and their saved data to a file at a place that you choose. The file is not encrypted: anyone who has the file can read its content. The app never sends this file anywhere. What happens to the file after that (for example if you put it in a cloud folder) is under your control.</p>
 <h2>Network</h2>
-<p>"Download online files" is off by default. While it is off, Purrchment makes no network requests.</p>
+<p>"Download online files" is off by default. While it is off, Purrchment downloads nothing.</p>
 <p>If you turn it on, Purrchment downloads, over HTTPS, the script, style and image files that your parchments link to, when you add or update a parchment. These requests go directly to the server that hosts each file (for example a content delivery network). That server receives your IP address and the address of the file, as with any download, and its own privacy policy applies. Purrchment sends no other data with these requests.</p>
-<p>Parchments themselves cannot use the network.</p>
+<p>While a parchment runs, Purrchment blocks it from the internet. The app answers every request of the parchment itself, with the page or with the files saved for offline use. The page's security policy blocks connections to other servers, and the browser feature that opens direct connections (WebRTC) is turned off.</p>
 <h2>Camera, microphone and location</h2>
 <p>A parchment can ask for the camera, the microphone or your location. Purrchment then asks you first. Only if you allow it does Android ask for its permission. The data goes only to that parchment, on your device. Your choice is saved for that parchment only, until you remove it in the parchment's details; other parchments must ask for themselves. When no parchment uses a feature any more, Purrchment gives the Android permission back (Android 13 and later). Purrchment does not record, store or send this data.</p>
 <h2>Files</h2>
